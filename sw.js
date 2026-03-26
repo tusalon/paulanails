@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Lysbleu by Lili
+// sw.js - Service Worker para Paula Nails 
 
-const CACHE_NAME = 'lisbleubylili-v1';
+const CACHE_NAME = 'paulanails-v1';
 const urlsToCache = [
-  '/lisbleubylili/',
-  '/lisbleubylili/index.html',
-  '/lisbleubylili/admin.html',
-  '/lisbleubylili/admin-login.html',
-  '/lisbleubylili/setup-wizard.html',
-  '/lisbleubylili/editar-negocio.html',
-  '/lisbleubylili/manifest.json',
-  '/lisbleubylili/icons/icon-72x72.png',
-  '/lisbleubylili/icons/icon-96x96.png',
-  '/lisbleubylili/icons/icon-128x128.png',
-  '/lisbleubylili/icons/icon-144x144.png',
-  '/lisbleubylili/icons/icon-152x152.png',
-  '/lisbleubylili/icons/icon-192x192.png',
-  '/lisbleubylili/icons/icon-384x384.png',
-  '/lisbleubylili/icons/icon-512x512.png'
+  '/paulanails/',
+  '/paulanails/index.html',
+  '/paulanails/admin.html',
+  '/paulanails/admin-login.html',
+  '/paulanails/setup-wizard.html',
+  '/paulanails/editar-negocio.html',
+  '/paulanails/manifest.json',
+  '/paulanails/icons/icon-72x72.png',
+  '/paulanails/icons/icon-96x96.png',
+  '/paulanails/icons/icon-128x128.png',
+  '/paulanails/icons/icon-144x144.png',
+  '/paulanails/icons/icon-152x152.png',
+  '/paulanails/icons/icon-192x192.png',
+  '/paulanails/icons/icon-384x384.png',
+  '/paulanails/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/lisbleubylili/icons/icon-192x192.png');
+            return caches.match('/paulanails/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Lysbleu by Lili');
+console.log('✅ Service Worker configurado para Paula Nails ');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

@@ -1,20 +1,20 @@
 {
-  "name": "Lysbleu by Lili",
-  "short_name": "Lysbleu",
+  "name": "Paula Nails ",
+  "short_name": "Paula",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/lisbleubylili/",
-  "scope": "/lisbleubylili/",
+  "start_url": "/paulanails/",
+  "scope": "/paulanails/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/lisbleubylili/icons/icon-192x192.png",
+      "src": "/paulanails/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/lisbleubylili/icons/icon-512x512.png",
+      "src": "/paulanails/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
